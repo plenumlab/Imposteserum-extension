@@ -6,7 +6,7 @@ A powerful Burp extension to make bounties rain
 # Do you think you are not good enough?
 # Would you like to change that?
 
-Well i got exactly what you need Imposteserum is a burpsuite extension powered by a powerful AI engine, collects behavioral and usage data and produces feedback that allows you to take matters in your own hands. This extension will help you become the next bugbounty millionaire i promise.
+Well i got exactly what you need Imposteserum is a burpsuite extension powered by a powerful AI engine, collects behavioral and usage data and produces feedback right into your burp dashboard (how cool is that) allowing you to take matters in your own hands. This extension will help you become the next bugbounty millionaire i promise.
 
 Donwload and install
 

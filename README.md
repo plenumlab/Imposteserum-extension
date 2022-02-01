@@ -1,5 +1,5 @@
 # Imposteserum-extension
-A powerful Burp extension to make bounty rain
+A powerful Burp extension to make bounties rain
 
 
 # Are you feeling down?

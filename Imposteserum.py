@@ -11,13 +11,14 @@ INJ_ERROR = "Unexpected pipe"
 INJ_ERROR_BYTES = bytearray(INJ_ERROR)
 QUOTES = [
           '"I am so clever that sometimes I don\'t understand a single word of what I am saying." Oscar Wilde', 
-          '"Optimist: you are."', 
+          '"It\'s ok to be optimistic, not delusional"', 
           '"Always take notes, because i don\'t"', 
           '"Remember to breath from time to time, it\'s good for your health"', 
           '"Focus on one thing, it\'s likely not worth it"', 
           '"I got you something! No quotes for you GO BACK TO WORK"', 
           '"A banana"'
           ]
+very_secure_random = random.SystemRandom()
 class BurpExtender(IBurpExtender, IScannerCheck):
 
     #
@@ -69,7 +70,7 @@ class BurpExtender(IBurpExtender, IScannerCheck):
             baseRequestResponse.getHttpService(),
             self._helpers.analyzeRequest(baseRequestResponse).getUrl(),
             [self._callbacks.applyMarkers(baseRequestResponse, None, matches)],
-            random.choice(QUOTES),
+            very_secure_random.choice(QUOTES),
             "Just a random extension don't mind me ;)",
             "Information")]
 
